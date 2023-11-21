@@ -1,1 +1,7 @@
-target_sources(main PRIVATE TableFive.cpp TableFive.h)
+cmake_minimum_required(VERSION 3.26)
+
+project(table5)
+
+add_library(table5 TableFive.cpp TableFive.h)
+
+target_include_directories(table5 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

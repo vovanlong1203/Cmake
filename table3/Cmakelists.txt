@@ -1,1 +1,7 @@
-target_sources(main PRIVATE TableThree.cpp TableThree.h)
+cmake_minimum_required(VERSION 3.26)
+
+project(table3)
+
+add_library(table3 TableThree.cpp TableThree.h)
+
+target_include_directories(table3 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

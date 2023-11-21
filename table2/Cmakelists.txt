@@ -1,1 +1,7 @@
-target_sources(main PRIVATE TableTwo.cpp TableTwo.h)
+cmake_minimum_required(VERSION 3.26)
+
+project(table2)
+
+add_library(table2 TableTwo.cpp TableTwo.h)
+
+target_include_directories(table2 PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

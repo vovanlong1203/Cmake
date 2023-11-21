@@ -1,7 +1,7 @@
-#include <table2/TableTwo.h>
-#include <table3/TableThree.h>
-#include <table4/TableFour.h>
-#include <table5/TableFive.h>
+#include <TableTwo.h>
+#include <TableThree.h>
+#include <TableFour.h>
+#include <TableFive.h>
 
 int main() {
     printTableTwo();
